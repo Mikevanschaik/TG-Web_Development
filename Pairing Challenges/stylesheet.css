@@ -1,0 +1,12 @@
+div {
+    background: linear-gradient(45deg, 
+    black,green,rgb(0, 128, 90));
+    width: 400px;
+     height:400px;
+     position: fixed;
+     top: 50%;
+     left: 50%;
+}
+
+h1 {color: white}
+h4 {color: white}
