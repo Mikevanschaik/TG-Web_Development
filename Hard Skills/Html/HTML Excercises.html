@@ -90,22 +90,34 @@
 <br>
 <br>
 <br>
-
-<div style="padding-left: 20px; background-color:rgb(170, 196, 252) ; border: 1px solid black">
-Persoons gegevens <br><br>
-<form action="/action_page.php">
-    <label for="achternaam">Achternaam:</label><br>
-    <input type="text" id="achternaam" name="achternaam" value="achternaam" ><br>
-    <label for="voornaam">Voornaam:</label><br>
-    <input type="text" id="voornaam" name="voornaam" value="voornaam"><br>
-    <input type="reset" value="Reset">
-    <input type="submit" value="Submit"></form>
-
-
-
-
+<div style="width: max-content;
+height: 320px;
+margin: 25px;
+padding: 25px 35px;
+background-color: #d6eadf;
+align-items: center;
+justify-content: center;
+border: 2px solid rgb(149, 174, 149);">
+  <fieldset style="width: 520px;
+  height: 320px;">
+  
+    <legend>Persoons Gegevens</legend>
+    <form action=""> <br/>
+      <label for="firstname">Voornaam</label><input type="text" />
+      <br /><br />
+      <label for="lastname">Achternaam</label><input type="text" /><br /><br />
+      <label for="birthday">Geboortedatum</label
+      ><input type="date" /><br /><br />
+      <label for="gender">M</label><input type="radio" /><br /><br />
+      <label for="gender">V</label><input type="radio" /><br /><br />
+      <label for="zipcode">Postcode:</label>
+      <input type="text" /><br /><br />
+      <label for="address">Adres:</label> <input type="text" /><br /><br />
+      <input type="submit" value="submit" />
+      <input type="reset" value="reset" />
+    </form>
+  </fieldset>
 </div>
-
 
 
   
