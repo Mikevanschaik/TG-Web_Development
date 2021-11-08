@@ -1,5 +1,5 @@
 .div {
-    background: linear-gradient(45deg, #000000, rgb(52, 122, 52), #52ffa0);
+    background: linear-gradient(45deg, black, green, #52ffa0);
     box-shadow: 0 3px 10px black;
     width: 400px;
     height: 400px;
