@@ -1,0 +1,38 @@
+.totaal {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 400px;
+    }
+
+
+
+.bol1, .bol2, .bol3 {
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: chartreuse;
+    animation: grow 1.5s reverse infinite ;
+}
+
+.bol1 {
+    animation-delay: 0s;
+}
+
+.bol2 {
+    animation-delay: 1s;
+}
+.bol3 {
+    animation-delay: 2s;
+}
+
+@keyframes grow {
+    0%   {transform: scale(-1);}
+    
+    100% {transform: scale(1);}
+
+    from {background-color: chartreuse;}
+  to {background-color: rgb(241, 206, 206);}
+
+     
+  }

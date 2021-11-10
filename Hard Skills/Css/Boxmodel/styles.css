@@ -1,0 +1,37 @@
+body {
+  
+    background-image: linear-gradient(to right, white, rgb(191, 250, 211));
+    background-size: cover;
+    font-family: 'Verdana';  
+    padding: 5px;
+    
+    
+}
+
+h1 {
+  text-align: center;
+  color: rgb(0, 151, 63);
+  
+}
+
+button {background-image: linear-gradient(45deg, green, rgb(49, 139, 84), rgb(139, 236, 168)) ; 
+  border: none;
+  border-radius: 25px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;}
+
+.textvak {
+    padding: 10px;  
+    background-color: rgb(230, 250, 234);
+    color: rgb(43, 226, 73);
+    border: rgb(5, 44, 0) solid 2px;
+    border-radius: 25px;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 1%;
+}  
