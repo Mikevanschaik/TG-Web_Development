@@ -12,7 +12,7 @@
     height: 30px;
     border-radius: 20px;
     background-color: chartreuse;
-    animation: grow 1.5s reverse infinite ;
+    animation: grow 1.5s  infinite ;
 }
 
 .bol1 {
@@ -32,7 +32,7 @@
     100% {transform: scale(1);}
 
     from {background-color: chartreuse;}
-  to {background-color: rgb(241, 206, 206);}
+  to {background-image: radial-gradient(rgb(239, 197, 243), chartreuse);}
 
      
   }
