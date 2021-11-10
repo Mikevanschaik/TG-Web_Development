@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <title>Voorbeelden opdracht 6</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,22 +15,11 @@
     font-size: large;
     background-color: blueviolet;
   }
-
+div + p {
+  color: brown;
+}
 </style>
-    
 
-</head>
-
-<body>
-    <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Selectors & Visual Rules - Opdracht 6</title>
-    <link rel="stylesheet" href="../../styles.css" />
-  </head>
   <body>
 
 
@@ -40,8 +29,8 @@
         <form method="get" action="Opdracht6.html" style="float: left;">
             <button type="submit">Terug</button> </form>
 
-    <h1>Opdracht 6</h1>
-
+    <h1>Opdracht 6; voorbeelden</h1>
+    <div id="child">      
     <div class="textvak">
 
       <h4>Child Selectors</h4>
@@ -80,21 +69,35 @@
         </ul>
       </ol>
       </p>
-    </div>
-
+    </div></div>
+    <div id="adjacent">
     <div class="textvak">
       <h4>Adjacent Selectors</h4>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        <br />
+      <div>
+        <p>Niet gestyled</p>
+        <p>Niet gestyled</p>
+      </div>
+      
+      <p>Nieuwe paragraaf buiten div, gestyled</p>
+      <p>Nieuwe paragraaf, dus niet gestyled</p>
+      
+      <div>
+        <p>Nieuwe div, niet gestyled</p>
+        <p>Zelfde div, dus niet gestyled</p>
+      </div>
+      
+      <p>Nieuwe paragraaf buiten div, gestyled</p>
+      <p>Nieuwe paragraaf</p>
+      
       </p>
     </div>
-
+    <div id="general">
     <div class="textvak">
       <h4>General Selectors</h4>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur <span>adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </span>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <span>
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.< Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
-    </div>
+    </div></div></div>
 
 </body>
