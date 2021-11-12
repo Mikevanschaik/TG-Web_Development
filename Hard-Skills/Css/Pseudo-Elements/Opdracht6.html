@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Opdracht 6</title>
+    <style>
+      .wrapper {
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          
+          height: 500px;
+  
+      }
+  
+      .cirkel-1,
+      .cirkel-2,
+      .cirkel-3 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 150px;
+          height: 150px;
+          background-color: black;
+          border-radius: 50%;
+          color: white;
+          position: relative;
+      }
+  
+      .cirkel-1 p {
+          display: flex;
+          justify-content: center;
+          align-items: center; 
+      }
+  
+      .cirkel-2::before {
+          content: ".";
+          width: 60px;
+          height: 60px;
+          background-color: rgb(0, 0, 0);
+          border-radius: 100%;
+          color: white;
+          position: relative;
+          left: -35px;
+          bottom: 0px;
+          text-align: center;
+          font-size:xx-large;
+          transform: rotate(20deg);
+  
+      }
+  
+      .cirkel-2::after{
+          content: ".";
+          width: 60px;
+          height: 60px;
+          background-color: rgb(2, 0, 0);
+          border-radius: 100%;
+          color: white;
+          position: relative;
+          right: -35px;
+          bottom: 0px;
+          text-align: center;
+          font-size:xx-large;
+          transform: rotate(180deg);
+      }
+  
+     span::before {
+          content: "";
+          font-size:xx-large;
+      }
+      
+  </style>
+  
+  </head>
+  <body>
+    <form method="get" action="Opdracht5.html" style="float: left">
+      <button type="submit">Vorige</button>
+    </form>
+
+    <form method="get" action="Opdracht7.html" style="float: right">
+      <button type="submit">Volgende</button>
+    </form>
+    <h1>Opdracht 6</h1>
+
+    <div class="textvak">
+
+    <div class="wrapper">
+      <div class="cirkel-1">            
+          <div class="cirkel-2">1</div>
+          
+      </div>
+      <div class="cirkel-1">
+          <div class="cirkel-2">2</div>
+      </div>
+      <div class="cirkel-1">
+          <div class="cirkel-2">3</div>
+          
+      </div>
+  </div>
+</div>
+
+  </body></html>

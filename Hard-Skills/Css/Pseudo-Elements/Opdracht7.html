@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Opdracht 7</title>
+
+    <style>
+
+      .container {
+         display: grid;
+         place-content: center;;
+         margin: 20vw auto;
+      }
+      
+      .vierkant {
+          height: 300px;
+          width: 300px;   
+          background-color: rgb(20, 220, 47);
+          transform: rotate(20deg);
+          position: relative;
+          
+      }
+  
+      .vierkant::before {
+          content: "";
+          height: 300px;
+          width: 300px; 
+          position: absolute;     
+          transform: rotate(45deg);
+          background-color: rgb(20, 220, 30);
+      }
+  
+      .vierkant::after {
+          content: "";
+          height: 300px;
+          width: 300px; 
+          position: relative;
+          transform: rotate(65deg);       
+      }
+  
+  </style>
+  </head>
+  <body>
+    <form method="get" action="Opdracht6.html" style="float: left">
+      <button type="submit">Vorige</button>
+    </form>
+    
+    <h1>Opdracht 7</h1>
+    
+
+    <div class="container">
+      <div class="vierkant">
+          <div class="vierkant"></div>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Opdracht 3</title>
+    <style>
+              .fl::first-line {
+
+        color: purple;
+      }
+
+      .flt::first-letter {
+
+        color: purple;
+      }
+
+      .af {
+        background-color: #f75b5b;
+      }
+
+      .af::after {
+        content: "This is a fancy orange box.";
+        background-color: #1078ff;
+        border-color: black;
+        border-style: dashed;
+      }
+
+      .bf {
+        background-color: #f75b5b;
+      }
+
+      .bf::before {
+        content: "This is a fancy orange box.";
+        background-color: #1078ff;
+        border-color: black;
+        border-style: dashed;
+      }
+
+      .sl::-moz-selection {
+        color: black;
+        background-color: #ff0303;
+      }
+
+      .sl::selection {
+        color: black;
+        background-color: #ff0303;
+      }
+
+      .bd video::-webkit-backdrop {
+        background: red;
+      }
+
+      .bd video::backdrop {
+        background: red;
+      }
+
+      li {
+        color: blue;
+      }
+
+      .cu::cue {
+        color: rgb(255, 255, 255);
+        background-color: rgba(0, 0, 0, 0.6);
+      }
+
+      input[type=file]::file-selector-button {
+        border: 2px solid #5ce76e;
+        padding: .2em .4em;
+        border-radius: .2em;
+        background-color: #9bfed5;
+        -webkit-transition: 1s;
+        transition: 1s;
+      }
+
+      input[type=file]::file-selector-button:hover {
+        background-color: #81ecba;
+        border: 2px solid #00ce1b;
+      }
+
+      .gr p::grammar-error {
+        
+                text-decoration: underline blue;
+        color: blue;
+      }
+
+      .box ul li::marker {
+        color :blue;
+        font-size: 1.5em;
+      }
+
+      .box input::-webkit-input-placeholder {
+        color: blue;
+        font-size: 1.3em;
+        font-style: italic;
+        padding: 1em;
+        font-family: 'Courier New', Courier, monospace;
+      }
+
+      .box input:-ms-input-placeholder {
+        color: #b53fcd;
+        font-size: 1.3em;
+        font-style: italic;
+        padding: 1em;
+        font-family: 'Courier New', Courier, monospace;
+      }
+
+      .box input::-ms-input-placeholder {
+        color: #b53fcd;
+        font-size: 1.3em;
+        font-style: italic;
+        padding: 1em;
+        font-family: 'Courier New', Courier, monospace;
+      }
+
+      .box input::placeholder {
+        color: #b53fcd;
+        font-size: 1.3em;
+        font-style: italic;
+        padding: 1em;
+        font-family: 'Courier New', Courier, monospace;
+      }
+
+      .box ::slotted(span) {
+        font-weight: bold
+
+      }
+
+      .spel-er p::spelling-error {
+        -webkit-text-decoration: wavy red;
+                text-decoration: wavy red;
+      }
+
+      .target::target-text {
+        background-color: #dd1313;
+        color: black;
+        font-weight: bold;
+      }
+
+    </style>
+  </head>
+<body>
+  
+    <form method= "get" action="Opdracht2.html" style="float: left">
+      <button type="submit">Vorige</button>
+    </form>
+
+    <form method="get" action="Opdracht4.html" style="float: right">
+      <button type="submit">Volgende</button>
+    
+    </form>
+
+    <h1>Opdracht 3</h1>
+
+    <div class="textvak">
+    
+      <h3>Pseudo element voorbeelden</h3>
+
+      <div class="list">
+        <ol>
+          <li>first-line</li>
+          <div class="fl box">
+            <p>Eerste regel word opgemaakt.</p>
+            <p>Alleen de eerste word opgemaakt</p>
+          </div>
+          <li>first-letter</li>
+
+          <div class="box flt"><p>eerste letter word opgemaakt</p></div>
+
+          <li>after</li>
+          <div class="box af">
+            Met after kan je content toevoegen achter een element
+          </div>
+
+          <li>before</li>
+          <div class="box bf">
+            Met before kan je content toevoegen voor een element
+          </div>
+
+          <li>Selection</li>
+          <div class="box sl">
+            Met selection kan je het gedeelte van een element dat door een
+            gebruiker is geselecteerd opmaken.
+          </div>
+
+          <li>backdrop</li>
+          <div class="box bd">
+            <video
+              controls
+              src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4"
+              poster="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217"
+              width="620"
+            ></video>
+
+            is een balk ter grootte van de viewport die direct onder elk element
+            wordt weergegeven dat in de modus Volledig scherm wordt weergegeven.
+          </div>
+
+          <li>cue</li>
+          <div class="box cu">
+            <p>
+              Het ::cue CSS pseudo-element komt overeen met WebVTT-cues binnen
+              een geselecteerd element. Dit kan worden gebruikt om bijschriften
+              en andere aanwijzingen in media met VTT-tracks te stylen.
+            </p>
+          </div>
+
+          <li>first-selector-button</li>
+          <div class="box fsb">
+            <form>
+              <label for="fileUpload">Upload file</label>
+              <input type="file" id="fileUpload" />
+            </form>
+            <p>
+              Het ::file-selector-button CSS pseudo-element vertegenwoordigt de
+              knop van een input van type="file"
+            </p>
+          </div>
+
+          <li>grammar-error</li>
+          <div class="box gr">
+            <p>
+              Het ::grammar-error CSS-pseudo-element vertegenwoordigt een
+              tekstsegment dat door de user-agent is gemarkeerd als grammaticaal
+              onjuist.
+            </p>
+            <p>typofsdlfhds</p>
+          </div>
+
+          <li>marker</li>
+          <div class="box">
+            <ul>
+              <li>Peaches</li>
+              <li>Apples</li>
+              <li>Plums</li>
+            </ul>
+          </div>
+          <li>part()</li>
+          <p>
+            Het ::part CSS pseudo-element vertegenwoordigt elk element binnen
+            een schaduwboom met een overeenkomend onderdeelkenmerk.
+          </p>
+
+          <li>placeholder</li>
+          <div class="box">
+            <input placeholder="Type hier..." />
+          </div>
+          <p>
+            Het ::placeholder CSS pseudo-element vertegenwoordigt de placeholder
+            tekst in een input of textarea element.
+          </p>
+          <li>slotted()</li>
+
+          <div class="box">
+            <person-details>
+              <p slot="person-name">Dr. boem</p>
+              <span slot="person-age">11</span>
+              <span slot="person-occupation">Streamer</span>
+            </person-details>
+          </div>
+          <p>
+            het ::slotted() CSS-pseudo-element vertegenwoordigt elk element dat
+            in een slot in een HTML-sjabloon is geplaatst
+          </p>
+          <li>spelling-error</li>
+
+          <div class="box speler">
+            <p contenteditable spellcheck="true">
+              We are coegdfgfddffbgning dancing at a party tonight.
+            </p>
+          </div>
+          <p>
+            Het ::spelling-error CSS-pseudo-element vertegenwoordigt een
+            tekstsegment dat door de user-agent is gemarkeerd als onjuist
+            gespeld.
+          </p>
+          <li>target-text</li>
+          <p class="target">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae
+            suscipit laborum ducimus, dolorum eum exercitationem quas
+            perferendis tempora voluptatum accusantium temporibus error magni
+            alias itaque, consequuntur numquam a! Minus, tempora!
+          </p>
+          <p>
+            The ::target-text CSS pseudo-element represents the text that has
+            been scrolled to if the browser supports scroll-to-text fragments.
+            It allows authors to choose how to highlight that section of text.
+          </p>
+        </ol>
+
+        
+      </div></div>

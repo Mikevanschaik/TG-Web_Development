@@ -1,0 +1,143 @@
+.main {
+  margin: 0 10vw;
+}
+
+.box {
+  margin: 1em 0;
+  background-color: grey;
+}
+
+.fl::first-line {
+  font-size: 130%;
+  color: red;
+}
+
+.flt::first-letter {
+  font-size: 130%;
+  color: red;
+}
+
+.af {
+  background-color: #f75b5b;
+}
+
+.af::after {
+  content: "This is a fancy orange box.";
+  background-color: #1078ff;
+  border-color: black;
+  border-style: dashed;
+}
+
+.bf {
+  background-color: #f75b5b;
+}
+
+.bf::before {
+  content: "This is a fancy orange box.";
+  background-color: #1078ff;
+  border-color: black;
+  border-style: dashed;
+}
+
+.sl::-moz-selection {
+  color: black;
+  background-color: #ff0303;
+}
+
+.sl::selection {
+  color: black;
+  background-color: #ff0303;
+}
+
+.bd video::-webkit-backdrop {
+  background: red;
+}
+
+.bd video::backdrop {
+  background: red;
+}
+
+li {
+  color: aqua;
+}
+
+.cu::cue {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+input[type=file]::file-selector-button {
+  border: 2px solid #6c5ce7;
+  padding: .2em .4em;
+  border-radius: .2em;
+  background-color: #a29bfe;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+input[type=file]::file-selector-button:hover {
+  background-color: #81ecec;
+  border: 2px solid #00cec9;
+}
+
+.gr p::grammar-error {
+  -webkit-text-decoration: underline red;
+          text-decoration: underline red;
+  color: red;
+}
+
+.box ul li::marker {
+  color: red;
+  font-size: 1.5em;
+}
+
+.box input::-webkit-input-placeholder {
+  color: #b53fcd;
+  font-size: 1.3em;
+  font-style: italic;
+  padding: 1em;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.box input:-ms-input-placeholder {
+  color: #b53fcd;
+  font-size: 1.3em;
+  font-style: italic;
+  padding: 1em;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.box input::-ms-input-placeholder {
+  color: #b53fcd;
+  font-size: 1.3em;
+  font-style: italic;
+  padding: 1em;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.box input::placeholder {
+  color: #b53fcd;
+  font-size: 1.3em;
+  font-style: italic;
+  padding: 1em;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+::slotted(span) {
+  font-weight: bold;
+}
+
+.spel-er p::spelling-error {
+  -webkit-text-decoration: wavy red;
+          text-decoration: wavy red;
+}
+
+.target::target-text {
+  background-color: #dd1313;
+  color: black;
+  font-weight: bold;
+}
+
+q {
+  color: red;
+}

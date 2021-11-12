@@ -1,6 +1,6 @@
 body {
   
-    background-image: linear-gradient(to right, white, rgb(244, 250, 191));
+    background-image: linear-gradient(to right, white, rgb(191, 221, 250));
     background-size: cover;
     font-family: 'Verdana';  
     padding: 5px;
@@ -10,11 +10,11 @@ body {
 
 h1 {
   text-align: center;
-  color: rgb(151, 148, 0);
+  color: rgb(3, 0, 151);
   
 }
 
-button {background-image: linear-gradient(45deg, yellow, rgb(139, 133, 49), rgb(236, 226, 139)) ; 
+button {background-image: linear-gradient(45deg, blue, rgb(49, 73, 139), rgb(139, 165, 236)) ; 
   border: none;
   border-radius: 25px;
   color: white;
@@ -26,9 +26,9 @@ button {background-image: linear-gradient(45deg, yellow, rgb(139, 133, 49), rgb(
 
 .textvak {
     padding: 10px;  
-    background-color: rgb(250, 247, 230);
-    color: rgb(226, 208, 43);
-    border: rgb(37, 35, 0) solid 2px;
+    background-color: rgb(230, 241, 250);
+    color: rgb(43, 76, 226);
+    border: rgb(2, 0, 37) solid 2px;
     border-radius: 25px;
     width: 50%;
     text-align: center;

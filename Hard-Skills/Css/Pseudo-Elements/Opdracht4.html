@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Opdracht 4</title>
+  </head>
+  <style>
+    .opdracht4-bluebox {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      width: 420px;
+      height: 35px;
+      background-color: #b2208e;
+      text-align: center;
+      align-items: center;
+    }
+
+    .opdracht4-wrapper {
+      position: relative;
+      width: 420px;
+      height: 35px;
+    }
+
+    .bottom-corner::after {
+      content: "";
+      position: absolute;
+      background-color: #d7ff47;
+      width: 5px;
+      height: 35px;
+      bottom: 0;
+      right: 0;
+    }
+
+    .bottom-corner::before {
+      content: "";
+      position: absolute;
+      background-color: #d7ff47;
+      width: 35px;
+      height: 5px;
+      bottom: 0;
+      right: 0;
+    }
+
+    .top-corner::after {
+      content: "";
+      position: absolute;
+      background-color: #d7ff47;
+      width: 5px;
+      height: 100%;
+      bottom: 0;
+      left: 0;
+    }
+
+    .top-corner::before {
+      content: "";
+      position: absolute;
+      background-color: #d7ff47;
+      width: 35px;
+      height: 5px;
+      top: 0;
+      left: 0;
+    }
+  </style>
+  <body>
+    <form method="get" action="Opdracht3.html" style="float: left">
+      <button type="submit">Vorige</button>
+    </form>
+
+    <form method="get" action="Opdracht5.html" style="float: right">
+      <button type="submit">Volgende</button>
+    </form>
+    <h1>Opdracht 4</h1>
+    <div class="textvak">
+      <div class="opdracht4-wrapper">
+        <div class="opdracht4-bluebox">Button</div>
+        <div class="top-corner"></div>
+        <div class="bottom-corner"></div>
+      </div>
+    </div>
+  </body>
+</html>
