@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Opdracht 1</title>
+  </head>
+  <body>
+    <form method="get" action="Opdracht2.html" style="float: right">
+      <button type="submit">Volgende</button>
+    </form>
+    <h1>Opdracht 1</h1>
+
+    <div class="textvak">
+        
+        <h4>Position Static:</h4>
+        <p>
+          Static position is de standaardinstelling. Wanneer een element static is
+          hebben de
+          <strong style="color: black;"><code>top right bottom left en z-index</code></strong> waarden
+          geen effect. Een static element wordt gepositioneerd volgens de normale
+          stroom van het document.
+        </p>
+      </div>
+      <div class="textvak">
+        <h4>Position Relative:</h4>
+        <p>
+          Wanneer je een element position op relative zet, zonder de volgende
+          waarden te gebruiken:
+          <strong style="color: black;"><code>top right bottom left</code></strong> gebeurt er niets.
+          Wanneer je een extra position toevoegt, zoals
+          <strong style="color: black;"><code>left : 20px;</code></strong> zal het element 20px naar
+          rechts verplaatsen vanaf zijn normale positie. Een relative element
+          wordt gepositioneerd volgens de normale stroom van het document.
+        </p>
+      </div>
+      <div class="textvak">
+        <h4>Position Absolute:</h4>
+        <p>
+          Wanneer een element een position heeft van absolute dan wordt het
+          element uit de documentstroom gehaald. Dit betekent dat het geen ruimte
+          meer in beslag neemt zoals static en relative. Wanneer de position
+          absolute is van een element dan wordt het element gepositioneerd met
+          verwijzing naar de closest parent element die zijn position of relative
+          heeft staan. 
+        </p>
+      </div>
+      <div class="textvak">
+        <h3>Position Fixed:</h3>
+        <p>
+          Wanneer een element een position heeft van fixed, wordt het element
+          relative gepositioneerd ten opzichte van de viewport. Wat dit betekent
+          is dat het altijd op dezelfde plaats blijft staan, zelfs als de pagina
+          wordt gescrold. De waarden van
+          <strong style="color: black;"><code>top right bottom left</code></strong> worden gebruikt om
+          het element te positioneren.Een fixed element laat geen gat in de pagina achter waar het element
+          normaal gesproken zou hebben gestaan.
+        </p>
+      </div>
+      <div class="textvak">
+        <h3>Position Sticky:</h3>
+        <p>
+          Sticky position is een hybride van relative en fixed positioning. Het
+          element met een sticky position wordt behandeld alsof het een relative
+          position heeft totdat het een gespecificeerde drempel overschrijdt,
+          waarna het wordt behandeld als een fixed position.
+        </p>
+      </div>
+  </body>
+</html>
