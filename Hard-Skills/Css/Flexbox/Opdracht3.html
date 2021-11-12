@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Opdracht 3</title>
+    <style>
+
+        /* justify-content naar flex-end gezet */
+        
+        .container {
+                display: flex;
+                flex-flow: row wrap;
+                background-color: rgb(204, 211, 190);
+                padding: 0.5rem;
+            }
+            
+            .flex-box {
+                display: flex;
+                background-color: rgb(160, 95, 127);
+                justify-content: center;
+                align-items: center;
+                flex-basis: 11%;
+                margin: 8px;
+                text-align: center;
+            }
+        
+            .flex-box::before {
+                content: "";
+                display: flex;
+                padding-top: 25%;      
+            }
+        
+           .grow-1 {
+                flex-grow: 1;
+            }
+                
+        </style>
+    
+  </head>
+  <body>
+    <form method="get" action="Opdracht2.html" style="float: left">
+      <button type="submit">Vorige</button>
+    </form>
+
+    <form method="get" action="Opdracht4.html" style="float: right">
+      <button type="submit">Volgende</button>
+    </form>
+    <h1>Opdracht 3</h1>
+
+    <div class="container">
+        <div class="flex-box"><p>1</p></div>
+        <div class="flex-box grow-1"><p>2</p></div>
+        <div class="flex-box"><p>3</p></div>
+        <div class="flex-box"><p>4</p></div>
+        <div class="flex-box"><p>5</p></div>
+        <div class="flex-box"><p>6</p></div>
+    </div>
+</body>
+</html>
