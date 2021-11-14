@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Opdracht 3</title>
+    <style>
+        .main-container {
+  background-color: white;
+  border: 2px solid black;
+  padding: 10px;
+  height: 300px;
+  width: 700px;
+  margin: 0 auto;
+}
+
+.square1,
+.square2,
+.square3,
+.square4,
+.square5 {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.square1 {
+  transition-timing-function: ease-out;
+  transition-duration: 2000ms;
+}
+
+.square2 {
+  transition-timing-function: ease-in;
+  transition-duration: 3000ms;
+}
+
+.square3 {
+  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+  transition-duration: 2500ms;
+}
+
+.square4 {
+  transition-timing-function: cubic-bezier(0.42, 0, 1, 1);
+  transition-duration: 2000ms;
+}
+
+.square5 {
+  transition-timing-function: cubic-bezier(0.5, 1, 0.1, -0.68);
+  transition-duration: 3000ms;
+}
+
+.main-container:hover .square {
+  background-color: red;
+  color: white;
+  margin-left: 650px;
+}
+
+.main-container:hover .square1 {
+  border-radius: 50px;
+}
+
+.main-container:hover .square2 {
+  border-radius: 10px;
+}
+    </style>
+  </head>
+  <body>
+    <form method="get" action="Opdracht2.html" style="float: left">
+      <button type="submit">Vorige</button>
+    </form>
+
+    <form method="get" action="Opdracht4.html" style="float: right">
+      <button type="submit">Volgende</button>
+    </form>
+    <h1>Opdracht 3</h1>
+
+    <div class="textvak">
+        <div class="main-container">
+          <div class="square square1">1</div>
+          <div class="square square2">2</div>
+          <div class="square square3">3</div>
+          <div class="square square4">4</div>
+          <div class="square square5">5</div>
+        </div>
+      </div>
