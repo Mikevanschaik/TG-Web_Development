@@ -6,26 +6,56 @@
 }
 
 @mixin flexcenter($direction) {
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: $direction;
-    
 }
+
+@mixin theme($light-theme: true) {
+  @if $light-theme {
+    background: lighten($primary-color, 100%);
+    color: darken($text-color, 100%);
+  }
+}
+
+@mixin mobile {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}
+
 body {
   background: $primary-color;
   color: $text-color;
 }
 
 .main {
-  @include flexcenter(column)
+  @include flexcenter(row);
   width: 90%;
   margin: 0 auto;
 
-  #{&}-paragraph {
+  #{&}-paragraph1 {
     font-weight: weight(bold);
     &:hover {
       color: pink;
     }
   }
+
+  #{&}-paragraph2 {
+    @extend .main-paragraph1;
+
+    &:hover {
+      color: $accent-color;
+    }
+
+  }
+
+  @include mobile {
+    flex-direction: column;
+  }
+}
+
+.light {
+  @include theme($light-theme: true);
 }
