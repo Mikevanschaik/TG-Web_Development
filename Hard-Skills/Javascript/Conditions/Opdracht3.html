@@ -1,15 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Opdracht 3</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conditions</title>
+  </head>
+  <body>
+    <h3>Opdracht 3</h3>
+    <h4>Opdracht 3.1</h4>
+    a. <br />
+    == checkt of de value OF het datatype overeen komt. <br />
+    === checkt of het datatype EN de value overeen komen. <br />
+    <br />
+    b. <br />
+    >staat voor greater than en >= staat voor greater than or equal to. <br />
+    <br />
+    c.
+    <code
+      ><br />
+      let x = 4; <br />
+      let y = 8; <br />
+      if (x == 4 && y == 8) <br />
+      {console.log("Result!"); }</code
+    >
+    <br />
+    <br />
+
+    d.
+    <code>
+      <br />
+      let x = 4; <br />
+      let y = 8; <br />
+      if (x == 4 || y == 8) <br />
+      {console.log("Result!"); <br />
+      }</code
+    >
+    <br />
+    <br />
+
+    e.
+    <code>
+      <br />
+      let x = 4; <br />
+      let y = 8; <br />
+      if (x != 4 || y != 8) <br />
+      {console.log("Result!");} <br />
+      else {console.log("Results!");}</code
+    >
+    <br />
+    <br />
+    f.
+    <code>
+      <br />
+      let x = 4; <br />
+      let y = 8; <br />
+      if (x != 8 && y != 4) <br />
+      {console.log("Result!");} <br />
+      else {console.log("Results!");} <br />
+    </code>
+    <br />
+    g./h./i./j. <br />
+    <code>
+      let number = 11; <br />
+
+      if (number > 5 && number < 10) <br />
+      {console.log(`Your number is: ${number}`);} <br />
+      else if (number >= 11 && number <= 20) <br />
+      {console.log(`Your number is: ${number}`);} <br />
+      else if (number === 21 || number === 23) <br />
+      {console.log(`Your number is: ${number}`);} <br />
+      else if (number < 35 || (number >= 40 && number <= 45)) <br />
+      {console.log(`Your number is: ${number}`);} <br />
+      else {console.log(`Invalid Number!`); <br />
+      }
+    </code>
+    <br /><br />
+
+    k. <br />
+    <code>
+      let number = 11; <br />
+      if (number > 5 && number < 10) <br />
+      {console.log(`Your number is: ${number}`);} <br />
+      if (number >= 11 && number <= 20) <br />
+      {console.log(`Your number is: ${number}`);} <br />
+      if (number === 21 || number === 23) <br />
+      {console.log(`Your number is: ${number}`);} <br />
+      if (number < 35 || (number >= 40 && number <= 45)) <br />
+      {console.log(`Your number is: ${number}`);} <br />
+    </code>
+    <br />
+    <br />
+    Je krijgt dan twee keer een uitkomst <br />
+
+    <h3>Opdracht 3.2</h3>
+    <br />
+    <br />
+    a.
+    <code>
+      <br />
+      let number = 4; <br />
+
+      if (number === 3) <br>
+      {console.log("gelijk aan 3");} 
+      else if (number > 4) <br>
+      {console.log("groter dan 3");} 
+      else if (number > 11) <br>
+      {console.log("groterdan 11");} <br>
+      else if (number < 3) <br>
+      {console.log("kleiner dan 3");} <br>
+    </code>
+    <br />
+    <br />
+
+    b. Bij 4 krijg ik geen uitslag in mijn console. <br />
+
+    <br />
+    c. <code> <br>
+        let month = 13; <br>
+<br>
+        if (month === 1) <br> 
+        {console.log("Januari");} <br> 
+        else if (month === 2) <br>
+        {console.log("Februari");} <br>
+        else if (month === 3) <br>
+        {console.log("Maart");} <br>
+        else if (month === 4) <br>
+        {console.log("April");} <br>
+        else if (month === 5) <br>
+        {console.log("Mei");} <br>
+        else if (month === 6) <br>
+        {console.log("Juni");} <br>
+        else if (month === 7) <br>
+        {console.log("Juli");} <br>
+        else if (month === 8) <br>
+        {console.log("Augustus");} <br>
+        else if (month === 9) <br>
+        {console.log("September");} <br>
+        else if (month === 10) <br>
+        {console.log("Oktober");} <br>
+        else if (month === 11) <br>
+        {console.log("November");} <br>
+        else if (month === 12) <br>
+        {console.log("December");} <br>
+        else <br>
+        {console.log("Geen geldige maand!");} <br>
+ </code> <br>
+<br>
+
+d. <code> <br>
+    let month = 12;
+
+       switch (month) { <br>
+         
+         case 1: <br>
+           month = "Januari"; <br>
+           console.log("Januari"); <br>
+          break; <br>
+         case 2: <br>
+           month = "Februari"; <br>
+           console.log("Februari"); <br>
+          break; <br>
+         case 3: <br>
+           month = "Maart"; <br>
+           console.log("Maart"); <br>
+          break; <br>
+         case 4: <br>
+           month = "April"; <br>
+           console.log("April"); <br>
+          break; <br>
+         case 5: <br>
+           month = "Mei"; <br>
+           console.log("Mei"); <br>
+          break; <br>
+         case 6: <br>
+           month = "Juni"; <br>
+           console.log("Juni"); <br>
+          break; <br>
+         case 7: <br>
+           month = "Juli"; <br>
+           console.log("Juli"); <br>
+          break; <br>
+         case 8: <br>
+           month = "Augstus"; <br>
+           console.log("Augustus"); <br>
+          break; <br>
+         case 9: <br>
+           month = "September"; <br>
+           console.log("September"); <br>
+          break; <br>
+         case 10: <br>
+           month = "Oktober"; <br>
+           console.log("Oktober"); <br>
+          break; <br>
+         case 11: <br>
+           month = "November"; <br>
+           console.log("November"); <br>
+         case 12: <br>
+            month = "December"; <br>
+            console.log("December") <br>
+            break;  <br>
+       } <br>
+<br>
+       e. <code> <br>
+           
+       let x = 5; <br>
+       let results; <br>
+
+       x <= 4 && x >= 0 ? (results = 2) : (results = 5); <br>
+       console.log(results); <br>
+       </code><br>
+
+
+
     <script>
-        
+      
+
+     
+
+      
+      
+
+     /*  let x = 5;
+       let results;
+
+       x <= 4 && x >= 0 ? (results = 2) : (results = 5);
+       console.log(results);
+
+    */
+
 
     </script>
-</body>
+  </body>
 </html>
