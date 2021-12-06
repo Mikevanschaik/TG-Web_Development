@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+</head>
+<body>
+  <button onclick="myFunction()">Functional Buttons!</button>
+  <br>
+  <input onchange="myFunction()">
+  <br>
+  <button id="b1" onclick="pressButtonOne()">Button #1</button>
+  <button id="b2" onclick="pressButtonTwo()">Button #2</button>
+  <br>
+  <button onclick="pressButton(this)">Button #3</button>
+  <button onclick="pressButton(this)">Button #4</button>
+  <br>
+  <button onclick="pressHelloButton()">Hello Button</button>
+  <input id="text-input" type="text" value="5">
+  <br>
+  <div class="get-elements-by-class-name-test"></div>
+  <div class="get-elements-by-class-name-test"></div>
+  <div class="get-elements-by-class-name-test"></div>
+  <div class="get-elements-by-class-name-test"></div>
+  <input id="text-input-2" type="text" oninput="logTextInput2(this)">
+  <br>
+  <button id="random-number-button" onclick="logRandomNumber()">RANDOM!</button>
+  <div class="input-name"></div>
+</body>
+
+
+  <script>
+//4.1
+//A
+const pressHelloButton = function () {
+  console.log("Hello World");
+};
+
+//B & C & D
+const textInputElement = document.getElementById("text-input");
+const logTextInput = function (textInputElement) {
+  console.log(textInputElement.value + 2);
+  const result = +1;
+  return textInputElement.value + 2;
+};
+console.log(logTextInput(textInputElement));
+
+const logNumber = function (number) {
+  let result = 7;
+  result += number;
+  return result;
+};
+console.log(logNumber(5));
+
+//4.2
+//A
+//1
+const classDivs = document.getElementsByClassName(
+  "get-elements-by-class-name-test"
+);
+console.log(classDivs);
+//2
+const tagDivs = document.getElementsByTagName("div");
+console.log(tagDivs);
+//3
+const querySelectorDiv = document.querySelector(
+  ".get-elements-by-class-name-test"
+);
+console.log(querySelectorDiv);
+const querySelector2 = document.querySelector("#b1");
+console.log(querySelector2);
+//4
+const querySelectorAllDivs = document.querySelectorAll(
+  ".get-elements-by-class-name-test"
+);
+console.log(querySelectorAllDivs);
+//5
+document.querySelector(".get-elements-by-class-name-test").innerHTML =
+  "Add text to DOM";
+//6
+console.log(
+  document.querySelector(".get-elements-by-class-name-test").innerText
+);
+
+//B
+const textInputElement2 = document.getElementById("text-input-2").value;
+const logTextInput2 = function (textInputElement2) {
+  console.log(textInputElement2);
+};
+
+//4.3
+//A
+const randomNumberButton = document.getElementById("random-number-button");
+const logRandomNumber = function () {
+  console.log(Math.random());
+};
+
+//B
+const randomNumberButton2 = document.getElementById("random-number-button2");
+const logRandomNumber2 = function (x) {
+  console.log(Math.floor(Math.random() * x));
+};
+logRandomNumber2(9);
+
+//C
+console.log(Math.min(6, 7, 8, 2200000));
+console.log(Math.max(6, 7, 8, 2200000));
+
+//4.4
+//A
+const checkName = function (inputName) {
+  if (
+    inputName == "Tristan" ||
+    inputName == "Cylvia" ||
+    inputName == "Miki" ||
+    inputName == "Carolyn" ||
+    inputName == "Mike"
+  ) {
+    console.log("Name recognised, access permitted.");
+    return "Name recognised, access permitted.";
+  } else {
+    console.log("Try another name.");
+    return "Try another name.";
+  }
+};
+checkName("Piet");
+checkName("Henk");
+checkName("Carolyn");
+checkName("Miki");
+
+//B
+const injectNameIntoDOM = function (name) {
+  const result = checkName(name);
+  const inputDiv = document.querySelector(".input-name");
+  inputDiv.innerHTML = result;
+};
+injectNameIntoDOM("Miki");
+
+//C
+const injectNameIntoDOMArrow = (name) => {
+  const result = checkName(name);
+  const inputDiv = document.querySelector(".input-name");
+  inputDiv.innerHTML = result;
+};
+injectNameIntoDOMArrow("Miki");
+    </script>
+  </body>
+</html>
