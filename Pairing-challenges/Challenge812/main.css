@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  overflow: hidden;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,14 +20,14 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: hidden;
   background-color: black;
   color: blanchedalmond;
-  height: 100%;
 }
 
-.container {
-  height: 8em;
-  width: 10em;
+.buttonContainer {
+  height: 10%;
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,20 +43,140 @@ body {
           align-items: center;
   background-color: green;
   position: absolute;
+  border-radius: 20px;
+  -webkit-box-shadow: 4px 4px 7px rgba(167, 204, 35, 0.3);
+          box-shadow: 4px 4px 7px rgba(167, 204, 35, 0.3);
+}
+
+button {
+  padding: .9em;
+  font-weight: bold;
+  -webkit-box-shadow: 2px 2px 3px black;
+          box-shadow: 2px 2px 3px black;
+  border-radius: 10px;
+  border: none;
 }
 
 .popUpLayout {
-  position: absolute;
+  position: fixed;
   z-index: 1;
-  background-color: hotpink;
-  width: auto;
-  display: none;
+  background-color: rgba(238, 94, 178, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
   padding: 1em;
 }
 
-.popUpLayout img {
+.popUpLayout div {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: red;
+  -webkit-box-shadow: 3px 3px 6px black;
+          box-shadow: 3px 3px 6px black;
+  padding: 1em;
+  height: 80%;
+  width: 60%;
+  font-size: 3em;
+}
+
+.popUpLayout div img {
+  height: 60%;
   width: auto;
-  height: 6em;
   margin: 1em;
+  -webkit-box-shadow: 3px 3px 6px black;
+          box-shadow: 3px 3px 6px black;
+}
+
+.popUpLayout div p {
+  width: 100%;
+  text-align: center;
+}
+
+.popUpLayout div span {
+  display: inline-block;
+  position: absolute;
+  top: .3em;
+  right: .5em;
+  cursor: pointer;
+}
+
+.hidePopUp {
+  -webkit-transition: .2s;
+  transition: .2s;
+  -webkit-animation-name: hidePopUp;
+          animation-name: hidePopUp;
+  -webkit-animation-duration: .6s;
+          animation-duration: .6s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 1;
+}
+
+@-webkit-keyframes hidePopUp {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes hidePopUp {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.showPopUp {
+  -webkit-transition: .2s;
+  transition: .2s;
+  -webkit-animation-name: showPopUp;
+          animation-name: showPopUp;
+  -webkit-animation-duration: .6s;
+          animation-duration: .6s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes showPopUp {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes showPopUp {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=main.css.map */

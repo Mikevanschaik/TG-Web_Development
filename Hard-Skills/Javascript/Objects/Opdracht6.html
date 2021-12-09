@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Objects</title>
+  </head>
+  <body>
+    <h1>Objects</h1>
+    <script>
+      // Opdracht 6.1
+
+      // A
+
+      // Object Constructor
+
+      const animalObjectConstructed = new Object();
+
+      animalObjectConstructed.name = "Iguana";
+      animalObjectConstructed.species = "Reptile";
+
+      console.log(animalObjectConstructed);
+
+      // Literal Constructor
+
+      const animalLiteralConstructed = {
+        name: "Phython",
+        species: "Reptile",
+      };
+
+      console.log(animalLiteralConstructed);
+
+      // Function Constructor
+
+      function animal(name, species) {
+        (this.name = name), (this.species = species);
+      }
+
+      const animalFunctionConstructed = new animal("Gecko", "Reptile");
+      console.log(animalFunctionConstructed);
+
+      // Singleton Constructor
+
+      const animalSingletonConstructed = new (function () {
+        (this.name = "Crocodile"), (this.species = "Reptile");
+      })();
+
+      console.log(animalSingletonConstructed);
+
+      // Class-based Constructor
+
+      class animalClass {
+        constructor(name, species) {
+          (this.name = "Desert Tortoise"), (this.species = "Reptile");
+        }
+      }
+
+      const animalClassConstructed = new animalClass(
+        "Desert Tortoise",
+        "Reptile"
+      );
+      console.log(animalClassConstructed);
+
+      // B
+
+      // C
+
+      let person = [
+        {
+          name: "Tyler",
+          age: 33,
+        },
+        {
+          name: "Lennon",
+          age: 25,
+        },
+        {
+          name: "Bowie",
+          age: 17,
+        },
+        {
+          name: "Cobain",
+          age: 50,
+        },
+        {
+          name: "Amy",
+          age: 7,
+        },
+        {
+          name: "Whitney",
+          age: 21,
+        },
+        {
+          name: "Hendrix",
+          age: 44,
+        },
+        {
+          name: "Morrison",
+          age: 38,
+        },
+        {
+          name: "Joplin",
+          age: 36,
+        },
+        {
+          name: "Jones",
+          age: 55,
+        },
+      ];
+
+      person.sort(function (a, b) {
+        return a.age - b.age;
+      });
+
+      console.log(person);
+
+      // Opdracht 6.2
+
+      // A
+
+      function club(name, club, members, address, phone, contact) {
+        this.name = name;
+        this.club = club;
+        this.members = members;
+        this.address = address;
+        this.phone = phone;
+        this.contact = contact;
+      }
+
+      const washingtonWizards = new club(
+        "Washington Wizards",
+        "Basketball",
+        21
+      );
+
+      // B
+
+      washingtonWizards.address = "Capital One Arena";
+      washingtonWizards.phone = 1234567789;
+      washingtonWizards.contact = "Wes Unseld Jr.";
+
+      // C
+
+      const newYorkYankees = new club(
+        "New York Yankees",
+        "Basketball",
+        22,
+        "Yankee Stadium",
+        4906801772,
+        "Aaron Boone"
+      );
+      const losAngelesLakers = new club(
+        "Los Angeles Lakers",
+        "Basketball",
+        25,
+        "STAPLES Center",
+        2353958406,
+        "Frank Vogel"
+      );
+      const bostonRedSox = new club(
+        "Boston Red Sox",
+        "Baseball",
+        30,
+        "Fenway Park",
+        2353466754,
+        "Alex Cora"
+      );
+      const newYorkKnicks = new club(
+        "New York Knicks",
+        "Baseball",
+        34,
+        "Madison Square Garden",
+        2358346056,
+        "Tom Thibodeau"
+      );
+      const chicagoBulls = new club(
+        "Chicago Bulls",
+        "Baseball",
+        36,
+        "United Center",
+        2395957706,
+        "Billy Donovan"
+      );
+
+      const sportClubs = [
+        washingtonWizards,
+        newYorkYankees,
+        losAngelesLakers,
+        bostonRedSox,
+        newYorkKnicks,
+        chicagoBulls,
+      ];
+
+      for (let info of sportClubs) {
+        console.log(info.name, info.phone, info.contact);
+      }
+    </script>
+  </body>
+</html>
