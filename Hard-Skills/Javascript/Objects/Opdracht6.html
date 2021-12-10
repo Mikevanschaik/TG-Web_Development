@@ -17,15 +17,15 @@
 
       const animalObjectConstructed = new Object();
 
-      animalObjectConstructed.name = "Iguana";
-      animalObjectConstructed.species = "Reptile";
+      animalObjectConstructed.name = "Cat";
+      animalObjectConstructed.species = "Feline";
 
       console.log(animalObjectConstructed);
 
       // Literal Constructor
 
       const animalLiteralConstructed = {
-        name: "Phython",
+        name: "Snake",
         species: "Reptile",
       };
 
@@ -37,13 +37,13 @@
         (this.name = name), (this.species = species);
       }
 
-      const animalFunctionConstructed = new animal("Gecko", "Reptile");
+      const animalFunctionConstructed = new animal("Parrot", "Bird");
       console.log(animalFunctionConstructed);
 
       // Singleton Constructor
 
       const animalSingletonConstructed = new (function () {
-        (this.name = "Crocodile"), (this.species = "Reptile");
+        (this.name = "Hamster"), (this.species = "Rodent");
       })();
 
       console.log(animalSingletonConstructed);
@@ -52,13 +52,13 @@
 
       class animalClass {
         constructor(name, species) {
-          (this.name = "Desert Tortoise"), (this.species = "Reptile");
+          (this.name = "Goldfish"), (this.species = "Fish");
         }
       }
 
       const animalClassConstructed = new animalClass(
-        "Desert Tortoise",
-        "Reptile"
+        "Goldfish",
+        "Fish"
       );
       console.log(animalClassConstructed);
 
@@ -68,43 +68,43 @@
 
       let person = [
         {
-          name: "Tyler",
+          name: "Mike",
+          age: 34,
+        },
+        {
+          name: "Wouter",
+          age: 34,
+        },
+        {
+          name: "Victor",
+          age: 40,
+        },
+        {
+          name: "Rico",
+          age: 35,
+        },
+        {
+          name: "Niels",
           age: 33,
         },
         {
-          name: "Lennon",
-          age: 25,
+          name: "Jorrit",
+          age: 33,
         },
         {
-          name: "Bowie",
-          age: 17,
+          name: "Dwight",
+          age: 33,
         },
         {
-          name: "Cobain",
-          age: 50,
+          name: "Boy",
+          age: 34,
         },
         {
-          name: "Amy",
-          age: 7,
+          name: "Fleur",
+          age: 33,
         },
         {
-          name: "Whitney",
-          age: 21,
-        },
-        {
-          name: "Hendrix",
-          age: 44,
-        },
-        {
-          name: "Morrison",
-          age: 38,
-        },
-        {
-          name: "Joplin",
-          age: 36,
-        },
-        {
-          name: "Jones",
+          name: "Gerard",
           age: 55,
         },
       ];
@@ -128,68 +128,68 @@
         this.contact = contact;
       }
 
-      const washingtonWizards = new club(
-        "Washington Wizards",
-        "Basketball",
-        21
+      const Ajax = new club(
+        "Ajax",
+        "Football",
+        2000000
       );
 
       // B
 
-      washingtonWizards.address = "Capital One Arena";
-      washingtonWizards.phone = 1234567789;
-      washingtonWizards.contact = "Wes Unseld Jr.";
+     Ajax.address = "Johan Cruyff Arena";
+      Ajax.phone = 123456789;
+      Ajax.contact = "Marc Overmars";
 
       // C
 
-      const newYorkYankees = new club(
-        "New York Yankees",
-        "Basketball",
-        22,
-        "Yankee Stadium",
-        4906801772,
-        "Aaron Boone"
+      const Feyenoord = new club(
+        "Feyenoord",
+        "Football",
+        1500000,
+        "De Kuip",
+        123456788,
+        "Piet Snot"
       );
-      const losAngelesLakers = new club(
-        "Los Angeles Lakers",
-        "Basketball",
-        25,
-        "STAPLES Center",
-        2353958406,
-        "Frank Vogel"
+      const PSV = new club(
+        "PSV",
+        "Football",
+        1400000,
+        "Phillips Stadion",
+        123456787,
+        "Piet Pannenkoek"
       );
-      const bostonRedSox = new club(
-        "Boston Red Sox",
-        "Baseball",
-        30,
-        "Fenway Park",
-        2353466754,
-        "Alex Cora"
+      const AZ = new club(
+        "AZ",
+        "Football",
+        1300000,
+        "Az stadion",
+        123456786,
+        "Piet Plezier"
       );
-      const newYorkKnicks = new club(
-        "New York Knicks",
-        "Baseball",
-        34,
-        "Madison Square Garden",
-        2358346056,
-        "Tom Thibodeau"
+      const Vitesse = new club(
+        "Vitesse",
+        "Football",
+        1200000,
+        "Gelredome",
+        123456785,
+        "Piet Precies"
       );
-      const chicagoBulls = new club(
-        "Chicago Bulls",
-        "Baseball",
-        36,
-        "United Center",
-        2395957706,
-        "Billy Donovan"
+      const fcUtrecht = new club(
+        "FC Utrecht",
+        "Football",
+        110000,
+        "De Galgendwaard",
+        123456784,
+        "Piet Puk"
       );
 
       const sportClubs = [
-        washingtonWizards,
-        newYorkYankees,
-        losAngelesLakers,
-        bostonRedSox,
-        newYorkKnicks,
-        chicagoBulls,
+        Ajax,
+        Feyenoord,
+        PSV,
+        AZ,
+        Vitesse,
+        fcUtrecht,
       ];
 
       for (let info of sportClubs) {
