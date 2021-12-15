@@ -1,0 +1,170 @@
+html {
+  background-image: url("./img/background.jpg");
+  text-align: center;
+  font-size: 10px;
+}
+
+html body {
+  margin: 0;
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.clock {
+  width: 50rem;
+  height: 50rem;
+  position: relative;
+  padding: 2px;
+  border: 12px solid #000000;
+  border-radius: 50%;
+  margin: 50px auto;
+  -webkit-box-shadow: 0 0 50px #9ecaed;
+          box-shadow: 0 0 50px #9ecaed;
+}
+
+.clock .rolex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  margin: auto;
+  z-index: 3;
+  max-height: 100px;
+  top: 65px;
+  right: 167px;
+}
+
+.clock .dial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  margin: auto;
+  z-index: 2;
+  max-height: 70px;
+  top: 340px;
+  right: 167px;
+}
+
+.clock .outer-clock-face {
+  position: relative;
+  background: #000000;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+.clock .outer-clock-face::after {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.clock .outer-clock-face::after,
+.clock .outer-clock-face::before,
+.clock .outer-clock-face .marking {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  background: #ffffff;
+  border: solid #616161 2px;
+  z-index: 0;
+  left: 49%;
+}
+
+.clock .outer-clock-face .marking {
+  background: #ffffff;
+  width: 4px;
+}
+
+.clock .outer-clock-face .marking.marking-one {
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+.clock .outer-clock-face .marking.marking-two {
+  -webkit-transform: rotate(60deg);
+  transform: rotate(60deg);
+}
+
+.clock .outer-clock-face .marking.marking-three {
+  -webkit-transform: rotate(120deg);
+  transform: rotate(120deg);
+}
+
+.clock .outer-clock-face .marking.marking-four {
+  -webkit-transform: rotate(150deg);
+  transform: rotate(150deg);
+}
+
+.clock .inner-clock-face {
+  position: absolute;
+  top: 45px;
+  left: 45px;
+  width: 80%;
+  height: 80%;
+  background: #000000;
+  background-image: linear-gradient(105deg, rgba(0, 0, 0, 0.301), rgba(255, 255, 255, 0.164), rgba(0, 0, 0, 0.425));
+  border: solid #616161 5px;
+  border-radius: 100%;
+  z-index: 1;
+}
+
+.clock .inner-clock-face::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  border-radius: 18px;
+  margin-left: -9px;
+  margin-top: -6px;
+  background: #ffffff;
+  z-index: 11;
+}
+
+.clock .hand {
+  width: 50%;
+  right: 50%;
+  height: 6px;
+  background: #ffffff;
+  position: absolute;
+  top: 50%;
+  border-radius: 6px;
+  -webkit-transform-origin: 100%;
+          transform-origin: 100%;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+          transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.clock .hand.hour-hand {
+  width: 25%;
+  z-index: 3;
+}
+
+.clock .hand.min-hand {
+  height: 3px;
+  z-index: 3;
+  width: 36%;
+}
+
+.clock .hand.second-hand {
+  background: #ffffff;
+  width: 180px;
+  height: 2px;
+  z-index: 10;
+}
+/*# sourceMappingURL=style.css.map */
